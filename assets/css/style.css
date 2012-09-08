@@ -1,0 +1,86 @@
+body { margin:0 auto; background:url('../img/tile_bg.jpg'); background-repeat: repeat-x; background-color:#0c1218; }
+
+p{ font-family: Arial, sans-serif; font-size: 13px; color: #7b8a9a; line-height: 20px;}
+
+
+
+
+
+
+
+header {position:fixed; top:0px; z-index:1; width:100%; height:98px; display:block; background:url('../img/tile_header.png'); background-repeat: repeat-x;}
+.logo a { position:relative; top:14px; margin-left:40px; background:url('../img/logo.jpg'); display:block; width:58px; height:55px; }
+.logo a:hover { background-position: 0px 73px ;}
+nav { background:url('../img/temp-nav.jpg'); width:320px; height:11px; position:absolute; right:40px; top:37px; }
+
+
+
+.intro { margin:auto; display:block; background:url('../img/intro.jpg'); width:652px; height:295px; text-align: center; }
+
+.container { position:relative; top:150px; }
+.works { position:relative; float:left; top:40px; padding-left:40px; padding-right:40px; top:70px;}
+.work{ float:left;}
+.work img { width:100%; }
+
+
+
+
+/*-------1 column-------*/
+@media screen and (max-width: 599px) {
+	.intro {
+		background:url('../img/intro.jpg');
+		display:block;
+		width:0px;
+		height:0px;
+	}
+	.work { width:100%; margin-bottom:5%;}
+
+}
+
+/*-------2 column-------*/
+@media screen and (min-width:600px) and (max-width: 1199px) {
+	.intro {
+		background:url('../img/intro.jpg');
+		display:block;
+		width:652px;
+		height:295px;
+	}
+	.work { width:49%; margin-bottom:2%; }
+	.work:nth-of-type(2n) { margin-left:2%; }
+}
+
+/*-------3 column-------*/
+@media screen and (min-width:1200px) and (max-width:1400px){
+	.work { width:100%;}
+	.work {	width:32.333333333333333%;}
+	.work:nth-of-type(2n) { margin-left:1.2%; }
+	.work:nth-of-type(3n) { margin-left:1.2%; }
+}
+
+/*-------3 column fixed-------*/
+@media screen and (min-width: 1401px) {
+	.work {	width:32.333333333333333%;}
+	.work:nth-of-type(2n) { margin-left:1.2%; }
+	.work:nth-of-type(3n) { margin-left:1.2%; }
+	.works {margin:auto; width:1321px; margin:0 auto; text-align: center;}
+}
+
+
+
+
+.about { position:relative; top:150px; width:100%; height:453px; float:left; background:url('../img/tile_about.jpg'); padding-top: 100px;}
+
+.about_container { max-width: 1352px; }
+.about .title {width:166px; height:41px; display:block; background:url('../img/about_title.jpg');}
+.about .left { width:420px; float:left; position:relative; margin: 0 60px 0 40px; /*left:40px;*/}
+
+
+.about .right { overflow: hidden; }
+.about .right > div { width: 33.3333%; background:url('../img/divider_about.jpg') left top repeat-y; float: left; margin: 50px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.about .right > div > div { margin-right: auto; margin-left: auto; }
+/*.about .divider {width:1px; height:180px; display:block; background:url('../img/divider_about.jpg'); float:left; margin-left:6.11111%; margin-right:6.11111%; position:relative; top:50px;}*/
+.about .rit {width:123px; height:143px; display:block; /*float:left;*/ background:url('../img/about_rit.jpg'); position:relative; margin-top:16px; margin-bottom: 20px;}
+.about .years {width:75px; height:143px; display:block; /*float:left;*/ background:url('../img/about_years.jpg'); position:relative; margin-top:16px; margin-bottom: 20px;}
+.about .location {width:78px; height:144px; display:block; /*float:left;*/ background:url('../img/about_location.jpg'); position:relative; margin-top:16px; margin-bottom: 20px;}
+
+
