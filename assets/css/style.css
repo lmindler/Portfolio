@@ -1,153 +1,41 @@
-
-/*---------------------------------------------------------------------
-                              SHELL
----------------------------------------------------------------------*/
 body { margin:0 auto; background:url('../img/tile_bg.jpg'); background-repeat: repeat-x; background-color:#0c1218; }
-
-p{ font-family: Arial, sans-serif; font-size: 13px; color: #7b8a9a; line-height: 20px;}
-
 
 
 header {position:fixed; top:0px; z-index:1; width:100%; height:98px; display:block; background:url('../img/tile_header.png'); background-repeat: repeat-x;}
 .logo a { position:relative; top:14px; margin-left:40px; background:url('../img/logo.jpg'); display:block; width:58px; height:55px; }
 .logo a:hover { background-position: 0px 73px ;}
-nav { background:url('../img/temp-nav.jpg'); width:320px; height:11px; position:absolute; right:40px; top:37px; }
-
-
-/*---------------------------------------------------------------------
-                              INTRO
----------------------------------------------------------------------*/
-.intro { margin:auto; display:block; background:url('../img/intro.jpg'); width:652px; height:295px; text-align: center; }
 
 
 
-/*---------------------------------------------------------------------
-                              WORKS
----------------------------------------------------------------------*/
-.container { position:relative; top:150px; }
-.works { position:relative; float:left; top:40px; padding-left:40px; padding-right:40px; top:70px;}
-.work{ float:left;}
-.work img { width:100%; }
+.nav_container{ width:100%;}
+@media screen and (min-width: 1401px) {		.nav_container {width:1400px; margin:auto;}		}
+
+nav {margin-left: 40px; margin-right: 40px; float:right; width:337px; position:relative; bottom:24px;}
+
+nav #home a {background:url('../img/nav_home.jpg'); width:59px; height:28px; display:block; float:left;}
+nav #home a:hover { background-position: bottom; }
+
+nav #work a {background:url('../img/nav_work.jpg'); width:68px; height:28px; display:block; float:left; }
+nav #work a:hover { background-position: bottom; }
+
+nav #about a {background:url('../img/nav_about.jpg'); width:130px; height:28px; display:block; float:left; }
+nav #about a:hover { background-position: bottom; }
+
+nav #contact a {background:url('../img/nav_contact.jpg'); width:80px; height:28px; display:block; float:left; }
+nav #contact a:hover { background-position: bottom; }
 
 
 
-/*---------------------------------------------------------------------
-                              ABOUT
----------------------------------------------------------------------*/
-.about { position:relative; top:280px; width:100%; height:453px; float:left; background:url('../img/tile_about.jpg'); background-repeat: repeat-x;}
-.about_container { width:100%; float:left; padding-top: 100px; max-width: 1400px; }
-
-/*   left   */
-.about .title {width:166px; height:41px; display:block; background:url('../img/about_title.jpg');}
-.about .left { width:420px; float:left; position:relative; margin: 0 60px 0 40px; }
-.about .left .button a {display:block; border:none; width:205px; height:29px; background:url('../img/home/buttons.png');}
-.about .left .button a:hover {background-position:0 87px;}
 
 
-/*   right   */
-.about .right { overflow: hidden; }
-.about .right > div { width: 33.3333%; background:url('../img/divider_about.jpg') left top repeat-y; float:left; margin: 50px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.about .right > div > div { height:144px; display:block; margin-right: auto; margin-left: auto; position:relative; margin-top:16px; margin-bottom: 20px;}
 
-.about .rit {width:123px; background:url('../img/about_rit.jpg'); }
-.about .years {width:75px; background:url('../img/about_years.jpg'); }
-.about .location {width:78px; background:url('../img/about_location.jpg'); }
+footer {width:100%; height:68px; display:block; background:url('../img/tile_footer.jpg'); float:left; position:relative; top:280px;}
+.footer_container {margin:auto;}
+footer p {font-size: 10px; margin-left:40px; margin-top:23px;}
 
-
-/*---------------------------------------------------------------------
-                              CONTACT
----------------------------------------------------------------------*/
-
-.contact { position:relative; top:280px; width:100%; height:453px; float:left; background:url('../img/home/tile_contact.jpg'); background-repeat: repeat-x;}
-.contact_container { width:100%; float:left; padding-top: 100px; max-width: 1400px; }
-.contact .title {width:147px; height:42px; display:block; background:url('../img/home/contact_title.jpg'); margin-left:40px;}
-.contact .email_container { position:absolute; right:40px; padding-top:3px; text-align:right;}
-.contact .email_container p {float:left; padding-right:6px;}
-.contact .email_container .button{float:left; position:relative; top:9px;}
-.contact .email_container .button a {display:block; border:none; width:258px; height:29px; background:url('../img/home/buttons.png'); background-position:0 58px;}
-.contact .email_container .button a:hover {background-position:bottom;}
-.contact .divider {width:auto; height:1px; display:block; background:url('../img/home/contact_divider.jpg'); background-repeat: repeat-x; position:relative; top:60px; left:40px; margin-right:80px;}
-
-
-.contact .social_container {width:auto; display:block; border-radius: 3px; background-color:#FFFFFF; height:200px; position:relative; top:80px; left:40px; margin-right:80px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
-.social_container > div > div > div {width:118px; display:block; height:27px;  margin-right:5%; margin-left:5%;}
-.social_container > div > div { width: 20%; float:left;}
-.twitter {background:url('../img/home/contact_twitter.jpg');}
-.facebook {background:url('../img/home/contact_facebook.jpg');float:left; }
-.dribbble {background:url('../img/home/contact_dribbble.jpg');float:left; }
-.pinterest {background:url('../img/home/contact_pinterest.jpg');float:left; }
-.tumblr {background:url('../img/home/contact_tumblr.jpg');}
-
-.klout {background:url('../img/home/contact_klout.jpg');}
-.linkedin {background:url('../img/home/contact_linkedin.jpg');float:left; }
-.foursquare {background:url('../img/home/contact_foursquare.jpg');float:left; }
-.google {background:url('../img/home/contact_google.jpg');float:left; }
-.spotify {background:url('../img/home/contact_spotify.jpg');}
-
-/*---------------------------------------------------------------------
-                          MEDIA QUERIES
----------------------------------------------------------------------*/
-
-
-/*       Less than 600px     */
-@media screen and (max-width: 599px) {
-	.intro { background:url('../img/intro.jpg'); display:block; width:0px; height:0px; }
-	.work { width:100%; margin-bottom:5%;}
-	
-}
-
-
-@media (max-width: 722px) {
-	.about .right {visibility: hidden;}
-	.about .left {width:auto;}
-}
-
-
-@media screen and (min-width: 723px) and (max-width: 879px) {
-	.about .right > div:nth-of-type(1) {width:98%; padding:0 10%;}
-	.about .right > div:nth-of-type(2) {width:0px; padding:0 0;}
-	.about .right > div:nth-of-type(3) { width:0px; padding:0 0;}
-	.about .years {width:0px;}
-	.about .location {width:0px;}
-}
-
-/*       Less than 990px, More than 880px      */
-@media screen and (min-width:880px) and (max-width: 990px) {
-	.about .right > div:nth-of-type(1) {width:50%; padding:0 10%;}
-	.about .right > div:nth-of-type(2) {width:50%; padding:0 10%;}
-	.about .right > div:nth-of-type(3) { width:0px; padding:0;}
-	.about .location {width:0px;}
-}
-
-
-/*       Less than 1200px, More than 600px      */
-@media screen and (min-width:600px) and (max-width: 1199px) {
-
-	.intro { background:url('../img/intro.jpg'); display:block; width:652px; height:295px; }
-	.work { width:49%; margin-bottom:2%; }
-	.work:nth-of-type(2n) { margin-left:2%; }
-}
-
-
-/*       Less than 1400px, More than 1200px      */
-@media screen and (min-width:1200px) and (max-width:1400px){
-	.work { width:100%;}
-	.work {	width:32.333333333333333%;}
-	.work:nth-of-type(2n) { margin-left:1.2%; }
-	.work:nth-of-type(3n) { margin-left:1.2%; }
-}
-
-
-/*       More than 1400px      */
 @media screen and (min-width: 1401px) {
-	.work {	width:32.333333333333333%;}
-	.work:nth-of-type(2n) { margin-left:1.2%; }
-	.work:nth-of-type(3n) { margin-left:1.2%; }
-	.works {float:none; margin:auto; text-align:center; width:1321px;}
-	.about_container { float:none; width:1400px; margin:auto;}
+	.footer_container {width:1400px; margin:auto;}
 }
 
 
-
-
-
+p{ font-family: Arial, sans-serif; font-size: 13px; color: #7b8a9a; line-height: 20px;}
