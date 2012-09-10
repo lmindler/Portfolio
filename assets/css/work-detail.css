@@ -1,0 +1,126 @@
+
+.launch-button a{width:150px; height:27px; background:url('../img/home/buttons.png'); display:block; background-position-y: 117px;}
+.launch-button a:hover{background-position-y: 88px;}
+
+.app-button a{width:190px; height:27px; background:url('../img/home/buttons.png'); display:block; background-position-y: 58px;}
+.app-button a:hover{background-position-y: 29px;}
+
+/*---------------------------------------------------------------------
+                              ABOUT
+---------------------------------------------------------------------*/
+.container { margin:auto; z-index:0; position:relative; top:50px; width:100%; height:auto; float:left; background:url('../img/tile_about.jpg'); background-repeat: repeat-x;}
+.description { width:100%; float:left; padding-top: 100px; max-width: 1400px; }
+
+/*   left   */
+.container .left .title img {width:auto;}
+.container .left { width:500px; float:left; position:relative; margin: 0 60px 0 40px; }
+.container .left .button a {display:block; border:none; width:205px; height:29px; background:url('../img/home/buttons.png');}
+.container .left .button a:hover {background-position:0 87px;}
+
+
+/*   right   */
+.container .right { overflow: hidden; }
+.container .right > div { width: 30.3333%; background:url('../img/divider_about.jpg') left top repeat-y; float:left; margin: 56px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.container .right > div > div { height:144px; display:block; margin-right: auto; margin-left: auto; position:relative; margin-top:20px; margin-bottom: 20px;}
+
+.container .right .company {background:url('../img/work/title_company.jpg'); background-repeat:no-repeat; width:66px; height:70px; }
+.container .right .company .mode {background:url('../img/work/title_company-mode.jpg'); width:59px; height:38px; position:relative; top:15px; left:4px;}
+.container .right .company .odopod {background:url('../img/work/title_company-odopod.jpg'); width:84px; height:38px; position:relative; top:15px; right:8px;}
+.container .right .company .none {background:url('../img/work/title_company-none.jpg'); width:16px; height:38px; position:relative; top:15px; left:22px;}
+
+
+.container .right .client {background:url('../img/work/title_client.jpg');  background-repeat:no-repeat; width:47px; height:70px; }
+.container .right .client .fftc {background:url('../img/work/fftc/title_client.jpg'); width:46px; height:38px; position:relative; top:15px; left:1px;}
+.container .right .client .sony {background:url('../img/work/playstation/title_client.jpg'); width:55px; height:38px; position:relative; top:15px; right:3px;}
+.container .right .client .donq {background:url('../img/work/donq/title_client.jpg'); width:51px; height:38px; position:relative; top:15px; right:1px;}
+.container .right .client .boars-head {background:url('../img/work/boarshead/title_client.jpg'); width:25px; height:36px; position:relative; top:15px; left:11px;}
+.container .right .client .checkers {background:url('../img/work/checkers/title_client.jpg'); width:95px; height:38px; position:relative; top:15px; right:19px;}
+.container .right .client .csg {background:url('../img/work/csg/title_client.jpg'); width:38px; height:38px; position:relative; top:15px; left:4px;}
+.container .right .client .flower-city {background:url('../img/work/flower-city/title_client.jpg'); width:46px; height:38px; position:relative; top:15px; right:0px;}
+.container .right .client .fox {background:url('../img/work/fox/title_client.jpg'); width:37px; height:38px; position:relative; top:15px; left:5px;}
+.container .right .client .kodowa {background:url('../img/work/kodowa/title_client.jpg'); width:80px; height:38px; position:relative; top:15px; right:14px;}
+.container .right .client .mizuno {background:url('../img/work/mizuno/title_client.jpg'); width:80px; height:38px; position:relative; top:15px; right:14px;}
+.container .right .client .odopod {background:url('../img/work/odosketch/title_client.jpg'); width:84px; height:38px; position:relative; top:15px; right:16px;}
+
+
+
+
+/*.description .right .roles {margin}*/
+.container .right .roles {height:auto;}
+.container .right .roles .roles-title { background:url('../img/work/title_roles.jpg'); width:43px; height:9px; margin-bottom:10px; }
+.container .right .roles .tag {height:23px; position:relative; right:8px; margin-bottom:6px;}
+.container .right .roles #design {background:url('../img/work/tag_design.jpg'); width:64px;}
+.container .right .roles #development {background:url('../img/work/tag_development.jpg'); width:104px;}
+.container .right .roles #concepting {background:url('../img/work/tag_concepting.jpg'); width:94px;}
+.container .right .roles #three-d {background:url('../img/work/tag_3d.jpg'); width:32px;}
+.container .right .roles #motion {background:url('../img/work/tag_motion.jpg'); width:65px;}
+.container .right .roles #illustration {background:url('../img/work/tag_illustration.jpg'); width:104px;}
+.container .right .roles #identity {background:url('../img/work/tag_identity.jpg'); width:70px;}
+.container .right .roles #ux {background:url('../img/work/tag_ux.jpg'); width:124px;}
+
+.divider {width:100%; margin:auto; position:relative; top:0px; display:block; height:1px; background:url('../img/work/divider.jpg'); margin-bottom:30px; background-repeat: repeat-x;}
+
+
+
+.images { float:left; padding-top: 5px; margin-left:40px; width:92%; margin-top:30px;}
+
+.small-spacer {margin-bottom:20px; float:none;}
+.large-spacer {margin-bottom:50px; float:none;}
+
+img {width:100%;}
+
+.image-full {float:none; border-radius: 4px; border-color: #ffffff; border-style: solid; -moz-border-radius: 3px; border-radius: 3px;}
+
+.image-quarter {width:23.5%; border-radius: 4px; border-color: #ffffff; border-style: solid; -moz-border-radius: 3px; border-radius: 3px;}
+.image-three-quarters {float:right; width:74%; border-radius: 4px; border-color: #ffffff; border-style: solid; -moz-border-radius: 3px; border-radius: 3px;}
+
+.image-half-left {float:right; width:48.7%; border-radius: 4px; border-color: #ffffff; border-style: solid; -moz-border-radius: 3px; border-radius: 3px;}
+.image-half-right {width:48.7%; margin-right:10px; border-radius: 4px; border-color: #ffffff; border-style: solid; -moz-border-radius: 3px; border-radius: 3px;}
+
+
+
+@media screen and (min-width:1401px) {
+	.container {width:1400px; margin:auto; float:none;}
+}
+@media screen and (max-width:1400px) and (min-width:1181px) {
+	.images { width:92%; }
+	.container .right {width:auto; height:auto; visibility: visible;}
+}
+
+@media screen and (max-width: 1180px) and (min-width: 1111px) {
+	.images { width:92%; }
+	.image-half-left {width:48.5%;}
+	.image-half-right {width:48.5%;}
+}
+@media screen and (max-width: 1110px) and (min-width: 815px) {
+	.images { width:89%; }
+	.image-half-left {width:48.5%;}
+	.image-half-right {width:48.5%;}
+	.container .left {float:none;}
+	.container .right > div { width: auto;  margin: 56px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+	.images { width:92%; }
+
+}
+@media screen and (max-width: 814px) and (min-width: 615px) {
+	.images { width:86.8%; }
+	.image-half-left {width:48%;}
+	.image-half-right {width:48%;}
+	.image-quarter {width:0px; visibility: hidden;}
+	.image-quarter img {width:0px; height:0px; visibility: hidden;}
+	.image-three-quarters {float:none; width:100%;}
+	.container .left {float:none;}
+	.container .right > div { width: auto;  margin: 56px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+}
+@media screen and (max-width: 614px) {
+	.images { width:86%; }
+	.image-half-left {float:none; width:100%; margin-right:0px; }
+	.image-half-right {float:none; width:100%; margin-left:0px; margin-right:0px; margin-top:20px; }
+	.image-quarter {width:0px; visibility: hidden;}
+	.image-quarter img {width:0px; height:0px; visibility: hidden;}
+	.image-three-quarters {float:none; width:100%;}
+	.container .left {float:none;}
+	.container .right > div { width: auto;  margin: 56px 0 0; padding: 0 5%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.container .right {height:0px; visibility: hidden;}
+}

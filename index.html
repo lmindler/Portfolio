@@ -18,50 +18,113 @@
 
 -->
 
-
+  <script type='text/javascript' src='assets/js/jquery-1.4.2.js'></script>
 
   <title>LM</title>
+
+
+  <script type='text/javascript'>//<![CDATA[ 
+    $(window).load(function(){
+     var topRange      = 100,  // measure from the top of the viewport to X pixels down
+         edgeMargin    = 50,   // margin above the top or margin from the end of the page
+         animationTime = 1200, // time in milliseconds
+         contentTop = [];
+
+    $(document).ready(function(){ 
+
+     // Stop animated scroll if the user does something
+     $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
+     if ( e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel' ){
+      $('html,body').stop();
+     }
+    })
+
+     // Set up content an array of locations
+     $('#menu').find('a').each(function(){
+      contentTop.push( $( $(this).attr('href') ).offset().top );
+     })
+
+     // Animate menu scroll to content
+      $('#menu').find('a').click(function(){
+       var sel = this,
+           newTop = Math.min( contentTop[ $('#menu a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
+       $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
+        window.location.hash = $(sel).attr('href');
+       });
+       return false;
+     })
+     
+     // adjust side menu
+     $(window).scroll(function(){
+      var winTop = $(window).scrollTop(),
+          bodyHt = $(document).height(),
+          vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+      $.each( contentTop, function(i,loc){
+       if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+        $('header .nav_container nav #menu li')
+         .removeClass('selected')
+         .eq(i).addClass('selected');
+       }
+      })
+     })
+      
+    })
+    });//]]>  
+
+</script>
+
+
+
 </head>
 
 <body>
 
   <header>
     <div class='logo'><a href="#"></a></div>
-    <div class='nav_container'>
+        <div class='nav_container'>
+
       <nav>
-        <div id='home'><a href='#'></a></div>
-        <div id='work'><a href='#'></a></div>
-        <div id='about'><a href='#'></a></div>
-        <div id='contact'><a href='#'></a></div>
+        <div id="menu">
+          <ul>
+            <li class='selected'><div id='home-nav'><a href="#home"></a></div></li>
+            <li><div id='works-nav'><a href="#works"></a></div></li>
+            <li><div id='aboutme-nav'><a href="#aboutme"></a></div></li>
+            <li><div id='contact-nav'><a href="#contact"></a></div></li>
+          </ul>
+        </div>
       </nav>
+
     </div>
   </header>
 
+  <a id="home"></a>
 
   <div class ='container'>
-    <div class='intro'></div>
 
+    <div class='intro'></div>
+    <a id="works"></a>
     <div class='works'>
-      <div class='work'><a href='#'><img src="assets/img/home/work_mizuno.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_fftc.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_boars-head.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_playstation.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_bravia.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_odosketch.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_ps-intranet.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_kodowa.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_donq.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_checkers.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_fry-love.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_csg.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_flower-city.jpg" /></a></div>
-      <div class='work'><a href='#'><img src="assets/img/home/work_fox.jpg" /></a></div>
+      <div class='work'><a href='work/mizuno/index.html'><img src="assets/img/home/work_mizuno.jpg" /></a></div>
+      <div class='work'><a href='work/fftc/index.html'><img src="assets/img/home/work_fftc.jpg" /></a></div>
+      <div class='work'><a href='work/boars-head/index.html'><img src="assets/img/home/work_boars-head.jpg" /></a></div>
+      <div class='work'><a href='work/playstation/index.html'><img src="assets/img/home/work_playstation.jpg" /></a></div>
+      <div class='work'><a href='work/bravia/index.html'><img src="assets/img/home/work_bravia.jpg" /></a></div>
+      <div class='work'><a href='work/odosketch/index.html'><img src="assets/img/home/work_odosketch.jpg" /></a></div>
+      <div class='work'><a href='work/checkers/index.html'><img src="assets/img/home/work_checkers.jpg" /></a></div>
+      <div class='work'><a href='work/ps-intranet/index.html'><img src="assets/img/home/work_ps-intranet.jpg" /></a></div>
+      <div class='work'><a href='work/kodowa/index.html'><img src="assets/img/home/work_kodowa.jpg" /></a></div>
+      <div class='work'><a href='work/donq/index.html'><img src="assets/img/home/work_donq.jpg" /></a></div>
+      <div class='work'><a href='work/fry-love/index.html'><img src="assets/img/home/work_fry-love.jpg" /></a></div>
+      <div class='work'><a href='work/flower-city/index.html'><img src="assets/img/home/work_flower-city.jpg" /></a></div>
+      <div class='work'><a href='work/csg/index.html'><img src="assets/img/home/work_csg.jpg" /></a></div>
+      <div class='work'><a href='work/fox/index.html'><img src="assets/img/home/work_fox.jpg" /></a></div>
 
     </div>
   </div>
-
   <div class='about'>
+    <a id="aboutme"></a>
       <div class = 'about_container'>
+
         <div class = 'left'>
           <div class='title'></div>
           <p>I’m Lindsay Mindler! An Interactive Designer/Developer working &amp; living in Charlotte, NC for MODE. I graduating from Rochester Institute of Technology in 2009, with my BFA in New Media Design &amp; Development and have a passion for everything mobile or touch-screen based. I’ve been fortunate enough to work for companies such as Odopod, Hunt &amp; Gather, IBM, and BEAM.</p>
@@ -79,6 +142,7 @@
 
 
     <div class='contact'>
+      <a id="contact"></a>
       <div class='contact_container'>
         <div class='title'></div>
 

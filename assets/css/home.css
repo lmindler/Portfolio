@@ -26,8 +26,8 @@
 /*   left   */
 .about .title {width:166px; height:41px; display:block; background:url('../img/about_title.jpg');}
 .about .left { width:420px; float:left; position:relative; margin: 0 60px 0 40px; }
-.about .left .button a {display:block; border:none; width:205px; height:29px; background:url('../img/home/buttons.png');}
-.about .left .button a:hover {background-position:0 87px;}
+.about .left .button a {display:block; border:none; width:205px; height:29px; background:url('../img/home/buttons.png'); background-position-y:233px;}
+.about .left .button a:hover {background-position-y:204px;}
 
 
 /*   right   */
@@ -53,8 +53,8 @@
 .email_container p { float:left; width:auto; text-align:left;}
 
 .email_container .button{ width:258px; padding-left:366px; padding-top:9px;}
-.email_container .button a { display:block; border:none; width:258px; height:29px; background:url('../img/home/buttons.png'); background-position:0 58px;}
-.email_container .button a:hover {background-position:bottom;}
+.email_container .button a { display:block; border:none; width:258px; height:29px; background:url('../img/home/buttons.png'); background-position-y:175px;}
+.email_container .button a:hover { background-position-y:146px;}
 .contact_container .divider {width:auto; height:1px; display:block; background:url('../img/home/contact_divider.jpg'); background-repeat: repeat-x; margin-top:60px; margin-left:40px; margin-right:40px;}
 
 

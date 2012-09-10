@@ -5,24 +5,194 @@ header {position:fixed; top:0px; z-index:1; width:100%; height:98px; display:blo
 .logo a { position:relative; top:14px; margin-left:40px; background:url('../img/logo.jpg'); display:block; width:58px; height:55px; }
 .logo a:hover { background-position: 0px 73px ;}
 
+nav {margin-left: 40px; margin-right: 40px; float:right; width:377px; position:relative; bottom:40px;}
+
+#menu{ width:100%;}
+@media screen and (min-width: 1401px) {		#menu {width:1400px; margin:auto;}		}
+
+nav #menu li {list-style: none;}
 
 
-.nav_container{ width:100%;}
-@media screen and (min-width: 1401px) {		.nav_container {width:1400px; margin:auto;}		}
+/*------------------HOME----------------*/
 
-nav {margin-left: 40px; margin-right: 40px; float:right; width:337px; position:relative; bottom:24px;}
+header .nav_container nav #menu li.selected #home-nav a{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg') left bottom;
+	float:left;
+}
 
-nav #home a {background:url('../img/nav_home.jpg'); width:59px; height:28px; display:block; float:left;}
-nav #home a:hover { background-position: bottom; }
+header .nav_container nav #menu li.selected #home-nav a:hover{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg') left bottom;
+	float:left;
+}
 
-nav #work a {background:url('../img/nav_work.jpg'); width:68px; height:28px; display:block; float:left; }
-nav #work a:hover { background-position: bottom; }
+header .nav_container nav #menu li.selected #home-nav a:active{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg') left bottom;
+	float:left;
+}
 
-nav #about a {background:url('../img/nav_about.jpg'); width:130px; height:28px; display:block; float:left; }
-nav #about a:hover { background-position: bottom; }
+header .nav_container nav #menu li #home-nav a{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg');
+	float:left;
+}
 
-nav #contact a {background:url('../img/nav_contact.jpg'); width:80px; height:28px; display:block; float:left; }
-nav #contact a:hover { background-position: bottom; }
+header .nav_container nav #menu li #home-nav a:hover{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #home-nav a:active{
+	width:59px;
+	height:28px;
+	background: url('../img/nav_home.jpg') left bottom;
+	float:left;
+}
+
+
+
+/*------------------WORKS----------------*/
+
+header .nav_container nav #menu li.selected #works-nav a{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg')  left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #works-nav a:hover{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg')  left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #works-nav a:active{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg')  left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #works-nav a{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg');
+	float:left;
+}
+
+header .nav_container nav #menu li #works-nav a:hover{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #works-nav a:active{
+	width:68px;
+	height:28px;
+	background: url('../img/nav_work.jpg') left bottom;
+	float:left;
+}
+
+
+
+/*------------------ABOUT----------------*/
+header .nav_container nav #menu li.selected #aboutme-nav a{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #aboutme-nav a:hover{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #aboutme-nav a:active{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #aboutme-nav a{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg');
+	float:left;
+}
+
+header .nav_container nav #menu li #aboutme-nav a:hover{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #aboutme-nav a:active{
+	width:130px;
+	height:28px;
+	background: url('../img/nav_about.jpg') left bottom;
+	float:left;
+}
+
+
+
+/*------------------ABOUT----------------*/
+
+header .nav_container nav #menu li.selected #contact-nav a{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #contact-nav a:hover{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li.selected #contact-nav a:active{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #contact-nav a{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg');
+	float:left;
+}
+
+header .nav_container nav #menu li #contact-nav a:hover{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg') left bottom;
+	float:left;
+}
+
+header .nav_container nav #menu li #contact-nav a:active{
+	width:80px;
+	height:28px;
+	background: url('../img/nav_contact.jpg') left bottom;
+	float:left;
+}
 
 
 
